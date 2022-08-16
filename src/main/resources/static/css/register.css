@@ -1,0 +1,27 @@
+*{
+  font-family: "Catamaran";
+}
+
+
+/* Start of Navbar */
+.navbar{
+    font-size:x-large;
+}
+
+.navbar-brand{
+  margin-top:.5vh;
+  margin-left: 1vh;
+}
+
+/* 
+  -------end of navbar--------- */
+
+
+main{
+    background-color: #89a2d4;
+    padding: 15vh 10vw 15vh;
+}
+
+h2{
+    margin: 5vh;
+}

@@ -1,0 +1,39 @@
+*{
+    font-family: "Catamaran";
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    #guyOnPhone{
+      height: 0px;
+      width: 0px;
+    }
+    
+
+  }
+
+/* Start of Navbar */
+.navbar{
+    font-size:x-large;
+    border-bottom: 1px solid #f6f6f6;
+}
+.navbar-brand{
+  margin-top:.5vh;
+  margin-left: 1vh;
+}
+/* end of navbar */
+
+#guyOnPhone{
+    margin-top: -12vh;
+    margin-left: -1.5vw;
+    overflow: hidden;
+}
+
+#loginbox{
+    margin-top: 10vh;
+    /* background-color: #89a2d4; */
+}
+
+footer{
+    overflow: hidden;
+
+}

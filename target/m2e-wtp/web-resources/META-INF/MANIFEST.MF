@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Shiddy Boy
+Build-Jdk: 17.0.2
+Implementation-Title: SpringSecurityDemo
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.coderscampus
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/SpringSecurityDemo
+Created-By: Maven Integration for Eclipse
+

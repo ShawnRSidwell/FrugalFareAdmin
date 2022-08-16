@@ -1,0 +1,28 @@
+*{
+  font-family: "Catamaran";
+}
+
+
+/* ---Start of Navbar ----*/
+
+
+header{
+    font-size:x-large;
+}
+.navbar-brand{
+  margin-top:.5vh;
+  margin-left: 1vh;
+}
+
+/* 
+  -------end of navbar--------- */
+  
+  
+#pricingTable {
+    width: 68%;
+    display: block;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+}

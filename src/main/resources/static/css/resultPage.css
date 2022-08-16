@@ -1,0 +1,49 @@
+
+*{
+  font-family: "Catamaran";
+}
+
+
+/* Start of Navbar */
+.navbar{
+    font-size:x-large;
+}
+.navbar-brand{
+  margin-top:.5vh;
+  margin-left: 1vh;
+}
+
+/* 
+  -------end of navbar--------- */
+  
+.card{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 10vh;
+    background-color: #89a2d4;
+    padding: 50px;
+
+}
+
+
+#recentRidesTable{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px
+}
+
+
+
+
+.list-group-item{
+    width: 50vw;
+}

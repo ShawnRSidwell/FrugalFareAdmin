@@ -1,0 +1,110 @@
+
+*{
+  font-family: "Catamaran";
+}
+
+
+/* Start of Navbar */
+.navbar{
+    font-size:x-large;
+}
+.navbar-brand{
+  margin-top:.5vh;
+  margin-left: 1vh;
+}
+
+/* 
+  -------end of navbar--------- */
+
+/* start of search bar */
+main{
+  background: linear-gradient(
+          rgba(34, 34, 34, 0.6),
+          rgba(34, 34, 34, 0.6)
+  ), url("${pageContext.request.contextPath}/resources/images/City-Landscape.jpg") no-repeat center center !important;
+  background-size:cover;
+  /* background-repeat: no-repeat; */
+  height: 90vh;
+
+}
+
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+  font-weight: 600;
+  
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+/* end of start bar */
+
+/* start of carousel */
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+#carousel{
+overflow-x: hidden;
+background-color: #f6f6f6;
+margin: auto;
+display: flex;
+flex-flow: column;
+
+}
+
+.carousel-item{
+  text-align: center;
+}
+
+.profilePicture{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* --Start of Center 2 Cards */
+.card{
+  margin-left:15vw;
+  margin-right:15vw;
+  margin-bottom: 10vh;
+  border: white;
+}
+
+#taxiphotocard {
+height: 50vh;
+width: 800px;
+}
+
+#driverUsingRideShareCard{
+  width: 800px;
+}
+
+
+/* Start of Bottom Cards - lyft/uber/yellow cab */
+
+#supportedCompanies{
+  text-align: center;
+}
+
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+
+  }
+
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+
+  }
+
+
