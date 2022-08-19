@@ -1,4 +1,4 @@
-package com.coderscampus.security;
+package com.frugalfareadmin.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,23 +22,24 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   }
   
   
-  //sets up in memory admin user
+  //Sets up an in memory admin user with encrypted password.
   @Override
   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
     auth
       .inMemoryAuthentication()
       .passwordEncoder(passwordEncoder)
-      .withUser("c@email.com")
-      .password("$2a$10$FuLmwiTg0mUK5dcijbndmuIHNvxTtZA9jsPBP7DR4SLHOMLEHdV9G")
+      .withUser("shawn@gmail.com")
+      .password("$2a$10$2mvsOcZd4aK6oNg119ERGOw1HnpRo3FFoyKUYgpq.6gYf1wRoyMdC")
       .roles("USER", "ADMIN");
   }
   
- //sets up access for admin user
+ //Sets up access for admin user.
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http
       .csrf().disable()
       .authorizeRequests()
+      .antMatchers("/resources/**", "/static/**").permitAll()
         .antMatchers("/admin/**").hasAnyRole("ADMIN")
         .anyRequest().hasAnyRole("USER").and()
       .formLogin()
@@ -48,10 +49,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   }
  
   
-//allows access to the resources and static folders
-  
+   //Allow views to access to the resources and static folders.
   @Override
-  public void configure(WebSecurity web) {
-      web.ignoring().antMatchers("/resources/**", "/static/**");
+  public void configure(WebSecurity web) throws Exception {
+      web
+              .ignoring()
+              .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**", "/icon/**");
   }
 }

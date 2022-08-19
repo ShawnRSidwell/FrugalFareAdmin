@@ -1,4 +1,4 @@
-package com.coderscampus.domain;
+package com.frugalfareadmin.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

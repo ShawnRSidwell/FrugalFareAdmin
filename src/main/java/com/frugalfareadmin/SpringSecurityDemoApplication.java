@@ -1,4 +1,4 @@
-package com.coderscampus;
+package com.frugalfareadmin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

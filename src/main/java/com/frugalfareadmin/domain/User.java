@@ -1,4 +1,4 @@
-package com.coderscampus.domain;
+package com.frugalfareadmin.domain;
 
 import java.util.ArrayList;
 import java.util.List;

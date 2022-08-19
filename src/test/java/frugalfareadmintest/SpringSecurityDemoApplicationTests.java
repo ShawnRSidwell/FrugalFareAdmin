@@ -1,4 +1,4 @@
-package com.coderscampus;
+package frugalfareadmintest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
